@@ -9,7 +9,7 @@ public class SumOfTwoNumbers {
       }
       map.put(nums[i], i);
     }
-    return new int[0];
+    throw new IllegalArgumentException("No two sum solution");
   }
 
   public static void main(String[] args) {
