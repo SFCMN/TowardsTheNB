@@ -1,5 +1,6 @@
 import java.util.HashMap;
 
+// notes: https://www.wolai.com/sfcmn/mfgFJu2z8u4kq1mYWB3miv?theme=light
 public class SumOfTwoNumbers {
   public int[] twoSum(int[] nums, int target) {
     final HashMap<Integer, Integer> map = new HashMap<>();
