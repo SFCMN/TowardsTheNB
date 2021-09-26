@@ -2,11 +2,12 @@ import java.util.HashMap;
 
 public class LongestSubstrWithoutRepeatedCharacters {
   public int lengthOfLongestSubstring(String s) {
+    final int strLength = s.length();
     int headIndexOfResult = 0;
     int maxLength = 0;
     final HashMap<Character, Integer> charIndexMap = new HashMap<>();
 
-    for (int index = 0; index < s.length(); index++) {
+    for (int index = 0; index < strLength; index++) {
       final char currentChar = s.charAt(index);
       if (charIndexMap.containsKey(currentChar)) {
         headIndexOfResult = Math.max(headIndexOfResult, charIndexMap.get(currentChar) + 1);
