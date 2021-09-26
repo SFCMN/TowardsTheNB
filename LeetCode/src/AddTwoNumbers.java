@@ -13,13 +13,11 @@ public class AddTwoNumbers {
     ListNode currentL1Node = l1;
     ListNode currentL2Node = l2;
 
-    ListNode result = new ListNode();
-    ListNode currentResultNode = new ListNode(0, result);
+    ListNode pre = new ListNode();
+    ListNode currentResultNode = pre;
 
     while (currentL1Node != null || currentL2Node != null || carry > 0) {
-      if (currentResultNode.next == null) {
-        currentResultNode.next = new ListNode();
-      }
+      currentResultNode.next = new ListNode();
       currentResultNode = currentResultNode.next;
       int l1Val = currentL1Node == null ? 0 : currentL1Node.val;
       int l2Val = currentL2Node == null ? 0 : currentL2Node.val;
@@ -33,7 +31,7 @@ public class AddTwoNumbers {
       currentL2Node = currentL2Node == null ? null : currentL2Node.next;
     }
 
-    return result;
+    return pre.next;
   }
 
   public static void main(String[] args) {
