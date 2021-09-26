@@ -1,5 +1,6 @@
 import java.util.HashMap;
 
+// notes: https://www.wolai.com/sfcmn/5cRccKQ4yb8Rnnjw8did9J?theme=light
 public class LongestSubstrWithoutRepeatedCharacters {
   public int lengthOfLongestSubstring(String s) {
     final int strLength = s.length();
