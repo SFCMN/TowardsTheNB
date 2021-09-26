@@ -7,6 +7,7 @@
   ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
+// notes: https://www.wolai.com/sfcmn/eZojPSzJwMMRUj9tJA4f3J
 public class AddTwoNumbers {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     int carry = 0;
