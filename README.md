@@ -1,7 +1,3 @@
 # TowardsTheNB
 
-[中文](./README_CN.md)
-
----
-
-This is to record the study notes of a programmer in the process of towards to the NB, it includes codes, notes, good article links and other useful knowledge for study.
+这是记录一个程序猿走向NB过程中的学习笔记，它包括代码、注释、优秀文章链接和其他有用的知识。
